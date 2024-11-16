@@ -2,7 +2,6 @@
   --bg: #f0f2f5;
   --white: #fff;
   --shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  /* color-scheme: light dark; */
 }
 
 * {
@@ -13,13 +12,7 @@
 
 body {
   font-family: Arial, sans-serif;
-  /* background-color: light-dark(#fff, #333);
-  color: light-dark(#333, #fff); */
   font-size: 14px;
-}
-
-input {
-  color: #fff;
 }
 
 h1 {
@@ -40,8 +33,6 @@ h1 {
 .left {
   height: 100%;
   width: 100%;
-  /* background-color: light-dark(var(--bg, var(--dark)));
-  color: light-dark(var(--bg, var(--dark))); */
   box-shadow: var(--shadow);
   padding: 2rem;
 }

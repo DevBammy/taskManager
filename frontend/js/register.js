@@ -4,7 +4,10 @@ const password = document.getElementById('password');
 const btn = document.getElementById('btn');
 
 btn.addEventListener('click', (e) => {
+  // presvent default button functionality
   e.preventDefault();
+
+  // get user input values
   const emailValue = email.value;
   const passwordValue = password.value;
   const usernameValue = username.value;
@@ -15,6 +18,8 @@ btn.addEventListener('click', (e) => {
     email: emailValue,
     password: passwordValue,
   };
+
+  // make a POST request to the register API endpoint
 
   fetch('http://localhost:7000/api/auth/register', {
     method: 'POST',

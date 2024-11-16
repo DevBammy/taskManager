@@ -19,7 +19,7 @@ btn.addEventListener('click', (e) => {
       'Content-Type': 'application/json',
     },
     body: JSON.stringify(loginData),
-    credentials: 'include', // Ensures cookies are included in requests
+    credentials: 'include',
   })
     .then((response) => {
       if (response.ok) {
@@ -30,7 +30,6 @@ btn.addEventListener('click', (e) => {
     .then((data) => {
       console.log('Login successful:', data);
       alert('Login successful');
-      // Redirect to the desired page after successful login
       window.location.href = 'task.html';
     })
     .catch((error) => {
